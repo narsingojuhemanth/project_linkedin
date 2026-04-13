@@ -1,0 +1,25 @@
+[project]
+name = "linkedin-easy-apply-assistant"
+version = "0.1.0"
+description = "Config-driven LinkedIn Easy Apply bot with application tracking"
+requires-python = ">=3.10"
+dependencies = [
+  "playwright==1.52.0",
+  "PyYAML==6.0.2",
+  "pydantic==2.11.3",
+  "rich==14.0.0",
+  "python-dotenv==1.1.0",
+]
+
+[project.scripts]
+linkedin-bot = "linkedin_easy_apply.main:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

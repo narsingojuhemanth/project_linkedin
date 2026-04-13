@@ -1,0 +1,26 @@
+personal:
+  full_name: "Your Name"
+  phone: "+1-555-0100"
+  city: "San Francisco"
+  country: "United States"
+  visa_status: "Authorized to work in the US"
+  years_of_experience: 3
+
+professional:
+  title: "Software Engineer"
+  skills:
+    - "Python"
+    - "FastAPI"
+    - "SQL"
+    - "AWS"
+  target_roles:
+    - "Software Engineer"
+    - "Backend Engineer"
+
+resume:
+  file_path: "/absolute/path/to/resume.pdf"
+
+screening_answers:
+  "Are you legally authorized to work in the United States?": "Yes"
+  "Will you now or in the future require sponsorship?": "No"
+  "How many years of Python experience do you have?": "3"

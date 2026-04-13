@@ -1,0 +1,34 @@
+linkedin:
+  email: "${LINKEDIN_EMAIL}"
+  password: "${LINKEDIN_PASSWORD}"
+
+runtime:
+  headless: false
+  dry_run: true
+  max_applications_per_run: 10
+  delay_seconds_between_actions: 1.2
+  wait_for_manual_login_seconds: 120
+
+search:
+  keywords:
+    - "Software Engineer"
+    - "Backend Engineer"
+  locations:
+    - "United States"
+    - "Remote"
+  experience_levels:
+    - "Entry level"
+    - "Associate"
+  date_posted: "past_week"
+  remote_only: true
+  easy_apply_only: true
+
+filters:
+  blacklisted_companies:
+    - "Example Corp"
+  blacklisted_keywords:
+    - "Senior"
+  minimum_match_score: 0.55
+
+files:
+  database_path: "data/applications.db"
